@@ -33,7 +33,7 @@ h2.title span {
     color: var(--secondary-color);
 }
 .container {
-    width: 95vw;
+    width: 90vw;
     max-width: 1280px;
     margin: auto;
 }
@@ -41,6 +41,11 @@ h2.title span {
 section {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+@media  screen and (max-width: 620px) {
+    h2 {
+        font-size: 30px;
+    }
 }
 /* nav css start */
 header {
@@ -80,10 +85,24 @@ header {
 .header_title {
     font-size: 80px;
 }
-
+@media  screen and (max-width: 620px) {
+    .header_title {
+        font-size: 50px;
+    }
+}
 
 /* what we do css start */
-h2.title:before {content: '';display: block;position: absolute;width: 120px;height: 4px;background: var(--secondary-color);left: 50%;transform: translateX(-50%);top: 65px;}
+h2.title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: var(--secondary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px;
+}
 
 .whatWeDo_wrapper {
     display: flex;
@@ -99,6 +118,22 @@ h2.title:before {content: '';display: block;position: absolute;width: 120px;heig
 }
 .contents {
     width: 50%;
+}
+
+@media  screen and (max-width: 980px) {
+    .whatWeDo_wrapper {
+        flex-direction: column;
+    }
+    .whyUs_wrapper {
+        flex-direction: column-reverse;
+    }
+    .contents {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .image {
+        width: 100%;
+    }
 }
 /* what we do css end */
 
@@ -138,6 +173,8 @@ h3.project_title {
 .project p {
     font-size: 20px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .project {
@@ -145,6 +182,19 @@ h3.project_title {
     padding-bottom: 20px;
     background: #fff;
     box-shadow: 0px 11px 15px -11px var(--secondary-color);
+    cursor: pointer;
+}
+@media  screen and (max-width: 1024px) {
+    .previousProjects_wrapper, .futureProjects_wrapper {
+        grid-template-columns: 47% 47%;
+        row-gap: 40px;
+    }
+}
+@media  screen and (max-width: 720px) {
+    .previousProjects_wrapper, .futureProjects_wrapper {
+        grid-template-columns: 100%;
+        row-gap: 40px;
+    }
 }
 /* our prevoius projects css end */
 
