@@ -10,6 +10,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+img {
+    width: 100%;
+}
 p {
     font-size: 22px;
     margin-bottom: 20px;
@@ -77,8 +80,7 @@ header {
 .header_title {
     font-size: 80px;
 }
-/* h2.header_title:before {content: '';display: block;position: absolute;width: 150px;height: 4px;background: var(--secondary-color);left: 50%;transform: translateX(-50%);top: 115px;} */
-/* header css end */
+
 
 /* what we do css start */
 h2.title:before {content: '';display: block;position: absolute;width: 120px;height: 4px;background: var(--secondary-color);left: 50%;transform: translateX(-50%);top: 65px;}
@@ -90,8 +92,17 @@ h2.title:before {content: '';display: block;position: absolute;width: 120px;heig
     margin-top: 80px;
     column-gap: 30px;
 }
-.contents:first-letter {font-size: 40px;font-style: italic;color: var(--secondary-color);}
+.contents:first-letter {
+    font-size: 40px;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+.contents {
+    width: 50%;
+}
 /* what we do css end */
+
+
 
 /* why us css start */
 #whyUs {
@@ -105,3 +116,59 @@ h2.title:before {content: '';display: block;position: absolute;width: 120px;heig
     column-gap: 30px;
 }
 /* why us css end */
+
+/* our previous projects css  start */
+#futureProjects {
+    background-color: #eee;
+}
+
+.previousProjects_wrapper, .futureProjects_wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+h3.project_title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.project {
+    border: 1px solid var(--secondary-color);
+    padding-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 11px 15px -11px var(--secondary-color);
+}
+/* our prevoius projects css end */
+
+
+
+
+
+/* our future projects css start */
+
+/* our future projects css end */
+
+
+/* footer css start */
+footer {
+    background: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 28px;
+}
+/* footer css end */
